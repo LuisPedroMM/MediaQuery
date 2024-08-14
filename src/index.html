@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MiLogo</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="hamburger-menu">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Esta es una página web simple con un diseño responsivo que se adapta a diferentes tamaños de pantalla.</p>
+    </main>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Tarjeta 1</h3>
+            <p>Contenido de la tarjeta 1.</p>
+        </div>
+        <div class="card">
+            <h3>Tarjeta 2</h3>
+            <p>Contenido de la tarjeta 2.</p>
+        </div>
+        <div class="card">
+            <h3>Tarjeta 3</h3>
+            <p>Contenido de la tarjeta 3.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Síguenos en:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.navbar ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
