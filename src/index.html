@@ -11,22 +11,22 @@
         <div class="logo">MiLogo</div>
         <nav class="navbar">
             <ul>
-                <li><a href="#Inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#Servicios"class="nav-link">Servicios</a></li>
-                <li><a href="#Contacto"class="nav-link">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
             <div class="hamburger-menu">&#9776;</div>
         </nav>
     </header>
 
-    <!-- Sección de Inicio-->
-    <main id="Inicio">
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="content-section">
         <h1>Bienvenido a Mi Página Web</h1>
         <p>Esta es una página web simple con un diseño responsivo que se adapta a diferentes tamaños de pantalla.</p>
-    </main>
+    </section>
 
-<!-- Sección de Servicios-->
-    <section id="Servicios" class="cards">
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="content-section" style="display: none;">
         <h2>Nuestros Servicios</h2>
         <div class="card">
             <h3>Tarjeta 1</h3>
@@ -42,16 +42,31 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto-->
-    <footer>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="content-section" style="display: none;">
         <p>Síguenos en:</p>
         <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-    </footer>
+    </section>
 
     <script>
-        document.querySelector('.hamburger-menu').addEventListener('click', function() {
-            document.querySelector('.navbar ul').classList.toggle('show');
+        // JavaScript para cambiar entre secciones
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                // Ocultar todas las secciones
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Mostrar la sección seleccionada
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).style.display = 'block';
+            });
         });
+
+        // Mostrar solo la sección "Inicio" al cargar la página
+        document.getElementById('inicio').style.display = 'block';
     </script>
 </body>
 </html>

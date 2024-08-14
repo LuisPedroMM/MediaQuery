@@ -1,4 +1,25 @@
 /* Estilos generales */
+/* Estilo para centrar el contenido de la sección Inicio */
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que la sección ocupe toda la altura de la ventana */
+    text-align: center; /* Centra el texto */
+}
+
+#inicio h1 {
+    justify-content: center;
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+}
+
+#inicio p {
+    text-align: center;
+    justify-content: center; 
+    max-width: 2500px; /* Limita el ancho del párrafo para mejor legibilidad */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +27,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #076e8d;
     color: #fff;
     padding: 10px 20px;
     display: flex;
