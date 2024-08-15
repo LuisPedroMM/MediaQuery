@@ -2,33 +2,6 @@
 /* Estilo para la sección de Inicio */
 /* Estilo para centrar el contenido de la sección Inicio */
 
-
-.hero {
-    background-image: url('images/ejercicio2.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 50vh; /* Esto hace que la imagen cubra toda la altura de la ventana */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-}
-
-
-.overlay {
-    background-color: rgb(57, 241, 241); /* Capa semitransparente sobre la imagen */
-    padding: 16px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    height: auto;
-    position: center;
-
-}
-
-
-
 #inicio {
     display: flex;
     flex-direction: column;
@@ -84,7 +57,34 @@ header {
     border-radius: 50%; /* Esto hace que la imagen tenga bordes redondeados como un círculo */
     }
    
-
+    .footer {
+        background-color: #012d3a; /* Color de fondo del footer */
+        color: white; /* Color del texto */
+        text-align: center; /* Centra el texto */
+        padding: 50px; /* Espaciado interno del footer */
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .footer .social-links {
+        margin-bottom: 10px;
+    }
+    
+    .footer .social-links a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    .footer .social-links img {
+        width: 20px; /* Ajusta el tamaño de los iconos */
+        height: 20px;
+        filter: invert(100%); /* Cambia el color del icono a blanco si es necesario */
+    }
+    
+    .footer p {
+        margin: 0; /* Elimina cualquier margen predeterminado */
+    }
 
 .navbar ul {
     list-style: none;
@@ -126,13 +126,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     flex: 1;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
     text-align: center;
 }
 
