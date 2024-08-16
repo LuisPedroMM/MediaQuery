@@ -59,7 +59,7 @@ header {
    
     .footer {
         background-color: #012d3a; /* Color de fondo del footer */
-        color: white; /* Color del texto */
+        color: rgb(0, 0, 0); /* Color del texto */
         text-align: center; /* Centra el texto */
         padding: 40px 0 50px 0;/* Espaciado interno del footer */
         position: relative;
@@ -122,10 +122,10 @@ main {
 
 .card {
     background-color: #78d9e0;
-    padding: 20px;
+    padding: 30px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(163, 0, 0);
     flex: 1;
     text-align: center;
 }
