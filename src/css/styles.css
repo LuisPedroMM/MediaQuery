@@ -61,10 +61,14 @@ header {
         background-color: #012d3a; /* Color de fondo del footer */
         color: white; /* Color del texto */
         text-align: center; /* Centra el texto */
-        padding: 50px; /* Espaciado interno del footer */
+        padding: 40px 0 50px 0;/* Espaciado interno del footer */
         position: relative;
         width: 100%;
         bottom: 0;
+        color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
     }
     
     .footer .social-links {
@@ -72,20 +76,10 @@ header {
     }
     
     .footer .social-links a {
-        margin: 0 10px;
-        display: inline-block;
+        margin: 10px;
+        display: inline-flex;
     }
     
-    .footer .social-links img {
-        width: 20px; /* Ajusta el tamaño de los iconos */
-        height: 20px;
-        filter: invert(100%); /* Cambia el color del icono a blanco si es necesario */
-    }
-    
-    .footer p {
-        margin: 0; /* Elimina cualquier margen predeterminado */
-    }
-
 .navbar ul {
     list-style: none;
     margin: 0;
@@ -109,7 +103,7 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
