@@ -80,6 +80,13 @@ header {
         display: inline-flex;
     }
     
+    .footer .social-links img {
+        width: 35px; /* Ajusta el tamaño de los iconos */
+        height: 35px;
+        filter: invert(100%); /* Cambia el color del icono a blanco si es necesario */
+    }
+
+
 .navbar ul {
     list-style: none;
     margin: 0;
