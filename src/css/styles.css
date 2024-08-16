@@ -12,6 +12,7 @@
 }
 
 h1, p {
+
     margin: 0;
     padding: 10px 0;
 }
@@ -30,8 +31,9 @@ h1, p {
 .tittle {
     text-align: center;
     margin-top: 10px; /* Puedes ajustar el margen superior según sea necesario */
-    font-size: 2em; /* Ajusta el tamaño de la fuente si es necesario */
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente si es necesario */
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -50,15 +52,23 @@ header {
     align-items: center;
 }
 
+
 .logo img {
     
     width: 90px;
     height: 90px;
     object-fit: fill;
-    margin-right: 20px;
+    margin-right:  50px;
     border-radius: 50%; /* Esto hace que la imagen tenga bordes redondeados como un círculo */
     }
    
+    .nombre {
+        align-items: center;
+        display: flex;
+        text-align: left;
+        font-size: 1em;
+    }
+
     .footer {
         background-color: #012d3a; /* Color de fondo del footer */
         color: rgb(255, 255, 255); /* Color del texto */
