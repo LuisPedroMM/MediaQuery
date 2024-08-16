@@ -34,13 +34,12 @@ h1, p {
     font-size: 1.5em; /* Ajusta el tamaño de la fuente si es necesario */
 }
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color:rgb(62, 20, 177);
-    background-color:rgb(186, 230, 248)
+    background:rgb(186, 230, 248)
 }
 
 header {
@@ -67,6 +66,19 @@ header {
         display: flex;
         text-align: left;
         font-size: 1em;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0; /* Ajusta el margen según lo necesites */
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: 90; /* Mantiene la proporción de la imagen */
+        border-radius: 15%; 
     }
 
     .footer {
